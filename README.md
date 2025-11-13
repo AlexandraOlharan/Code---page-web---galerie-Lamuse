@@ -1,6 +1,6 @@
 # Code---page-web---galerie-Lamuse
 
-<html lang "fr">
+
 <header>
     <nav>
         <ul>
@@ -107,5 +107,8 @@
         <button type="button">Soumettre</button>
     </section>
 </body>
+
+
+<style type="text/css>
 
 
