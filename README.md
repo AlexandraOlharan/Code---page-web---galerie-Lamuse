@@ -1,4 +1,5 @@
 # Code---page-web---galerie-Lamuse
+
 <html lang "fr">
 <header>
     <nav>
@@ -23,7 +24,7 @@
     <section class="presentation">
     <h2>Présentation</h2>
     <p>
-        <img src="Images" alt="portrait.png" style="float:right;width:180px;height:210px;">
+        <img src="Images/portrait.png" alt="portrait" style="float:right;width:180px;height:210px;">
         Gilles François a fondé la galerie Lamuse en 1975. Né dans une 
         famille d’artistes, il a très tôt développé un goût pour la matière, 
         la lumière et la forme. Après des études aux Beaux-Arts, et à l’occasion 
@@ -44,27 +45,27 @@
     <div class="grille">
 
     <div class="carte1">
-             <img src="Images" alt="dégradé.jpg" style="width:180px;height:180px;">
+             <img src="Images/dégradé.jpg" alt="dégradé" style="width:180px;height:180px;">
              <p>Eva Lautier</p>
     </div>
     <div class="carte2">
-             <img src="Images" alt="bain.jpg" style="width:180px;height:180px;">
+             <img src="Images/bain.jpg" alt="bain" style="width:180px;height:180px;">
              <p>Anne-Sophie Paris</p>
     </div>
     <div class="carte3">
-             <img src="Images" alt="tag.jpg" style="width: 180px;height: 180px;">
+             <img src="Images/tag.jpg" alt="tag" style="width: 180px;height: 180px;">
              <p>Jeanne Fostner</p>
     </div>
     <div class="carte4">
-             <img src="Images" alt="paysage.jpg" style="width: 180px;height: 180px;">
+             <img src="Images/paysage.jpg" alt="paysage" style="width: 180px;height: 180px;">
              <p>Josiane Lucas</p>
     </div>
     <div class="carte5">
-             <img src="Images" alt="main.jpg" style="width: 180px;height: 180px;">
+             <img src="Images/main.jpg" alt="main" style="width: 180px;height: 180px;">
              <p>France Chevalier</p>
     </div>
     <div class="carte6">
-             <img src="Images" alt="coulis.jpg" style="width: 180px;height: 180px;">
+             <img src="Images/coulis.jpg" alt="coulis" style="width: 180px;height: 180px;">
              <p>Marie Rose</p>
     </div>
    
@@ -74,13 +75,13 @@
     <section class="oeuvres">
         <h2>Oeuvres</h2>
         <div class="grille">
-            <img src="Images" alt="temple">
-            <img src="Images" alt="danseuse">
-            <img src="Images" alt="arbre">
-            <img src="Images" alt="table">
-            <img src="Images" alt="femme">
-            <img src="Images" alt="vague">
-            <img src="Images" alt="tapisserie">
+            <img src="Images/temple.png" alt="temple">
+            <img src="Images/danseuse.png" alt="danseuse">
+            <img src="Images/arbre.png" alt="arbre">
+            <img src="Images/table.jpg" alt="table">
+            <img src="Images/femme.jpg" alt="femme">
+            <img src="Images/vague.png" alt="vague">
+            <img src="Images/tapisserie.png" alt="tapisserie">
         </div>
     </section>
 
@@ -106,3 +107,5 @@
         <button type="button">Soumettre</button>
     </section>
 </body>
+
+
