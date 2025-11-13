@@ -53,7 +53,7 @@
              <p>Anne-Sophie Paris</p>
     </div>
     <div class="carte3">
-             <img src="Images/tag.jpg" alt="tag" style="width: 180px;height: 180px;">
+             <img src="images/tag.jpg" alt="tag" style="width: 180px;height: 180px;">
              <p>Jeanne Fostner</p>
     </div>
     <div class="carte4">
