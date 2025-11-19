@@ -1,0 +1,46 @@
+/* SECTION OEUVRES */
+
+.oeuvres-section {
+    width: 80%;
+    margin: 50px auto;
+    padding-bottom: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.oeuvres-section h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* grille des oeuvres */
+.oeuvres-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.oeuvres-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: transform 0.2s ease;
+}
+
+/* petit zoom au survol */
+.oeuvres-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* RESPONSIVE : version mobile */
+@media (max-width: 768px) {
+    .oeuvres-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .oeuvres-section {
+        width: 90%;
+    }
+}
