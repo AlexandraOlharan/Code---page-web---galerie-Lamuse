@@ -45,21 +45,21 @@ body {
     border-radius: 0 0 3px 3px;
 }
 
-/* CONTAINER PRINCIPAL */
+
 .container {
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 40px;
 }
 
-/* TITRE */
+
 h2 {
     font-size: 24px;
     margin-bottom: 30px;
     font-weight: 600;
 }
 
-/* GRILLE DES ŒUVRES */
+
 .grid-oeuvres {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -72,7 +72,7 @@ h2 {
     display: block;
 }
 
-/* FOOTER CONTACT / ADRESSE */
+
 .bas-page {
     display: flex;
     justify-content: flex-start;
@@ -91,4 +91,5 @@ h2 {
     line-height: 1.4;
     margin: 3px 0;
 }
+
 
