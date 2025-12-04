@@ -1,3 +1,9 @@
+
+h1, h2, h3 {
+    font-family: 'Inria Serif', serif;
+}
+
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -157,6 +163,7 @@ footer p {
         text-align: center;
     }
 }
+
 
 
 
