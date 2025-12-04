@@ -110,7 +110,130 @@
 
 
 <style type="text/css>
-    
+    <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lamuse Galerie</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: "Times New Roman", serif;
+            background-color: #f7f7f7;
+        }
+
+        /* ----------- Style de l'index ----------- */
+        nav {
+            width: 100%;
+            background-color: white;
+            padding: 15px 0;
+            border-bottom: 3px solid #b47bd2;
+            display: flex;
+            justify-content: center;
+            gap: 50px;
+            font-size: 18px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+        }
+
+        /* ----------- Style titre ----------- */
+        h1 {
+            text-align: center;
+            font-size: 48px;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+
+        /* ----------- Style image principale ----------- */
+        .hero img {
+            width: 80%;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+        }
+
+        /* ----------- Style de la premiere section ----------- */
+        .presentation {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .presentation h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .presentation-content {
+            display: flex;
+            gap: 20px;
+        }
+
+        .presentation img {
+            width: 220px;
+            border-radius: 5px;
+        }
+
+        .presentation p {
+            font-size: 17px;
+            line-height: 1.5;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ----------- Index ----------- -->
+    <nav>
+        <a href="#contacts">Contacts</a>
+        <a href="#informations">Informations</a>
+        <a href="#presentation">Présentation</a>
+        <a href="#artistes">Artistes</a>
+        <a href="#oeuvres">Oeuvres</a>
+    </nav>
+
+    <!-- ----------- Titre ----------- -->
+    <h1>Lamuse Galerie</h1>
+
+    <!-- ----------- Main Image ----------- -->
+    <div class="hero">
+        <img src="IMAGE1.png" alt="Galerie">
+    </div>
+
+    <!-- ----------- Presentation ----------- -->
+    <!-- Assurez que chacune de vos sections sont encadre par cette ligne en bas -->
+
+    <section id="presentation" class="presentation">
+        <h2>Présentation</h2>
+
+        <div class="presentation-content">
+
+            <img src="FONDATEUR.png" alt="Fondateur">
+            <!-- Remplacez FONDATEUR.jpg par l’image du fondateur -->
+
+            <p>
+                Gilles François a fondé la galerie Lamuse en 1975. Né dans une famille d’artistes, 
+                il a très tôt développé un goût pour la matière, la lumière et la forme. Après des 
+                études aux Beaux-Arts, et à l’occasion de nombreux voyages, il aiguise sa vision 
+                artistique et sa créativité. Il décide de créer un espace qui lui ressemble : un lieu 
+                de découverte, d’échanges et de rencontres où la créativité se vit au présent. Toujours 
+                en quête d’innovation, il collabore avec des artistes aux créations variées, mêlant 
+                photographie, peinture, et arts numérique. <br><br>
+                La galerie Laamuse célèbre aujourd’hui l’audace de la femme. Elle offre une scène 
+                vibrante aux artistes émergentes et confirmées, dans un mélange de créativité, 
+                d’émotions et de réflexions.
+            </p>
+
+        </div>
+    </section>
+
+</body>
+</html>
 
 
 
