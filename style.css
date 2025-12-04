@@ -89,7 +89,7 @@ h2 {
 }
 
 .col img {
-    width: 280px;       /* largeur fixe pour garder l’effet figma */
+    width: 280px;       
     height: auto;
     display: block;
     border-radius: 3px;
@@ -115,11 +115,7 @@ footer p {
     white-space: pre-line;
 }
 
-/* -------------------------- */
-/*         RESPONSIVE         */
-/* -------------------------- */
 
-/* TABLETTE : 2 colonnes */
 @media (max-width: 1000px) {
     .gallery {
         flex-wrap: wrap;
@@ -136,7 +132,6 @@ footer p {
     }
 }
 
-/* MOBILE : 1 colonne */
 @media (max-width: 600px) {
     body {
         padding: 20px;
@@ -152,7 +147,7 @@ footer p {
     }
 
     .col img {
-        width: 90%;   /* s’adapte totalement au mobile */
+        width: 90%;   
         max-width: 280px;
     }
 
@@ -162,3 +157,4 @@ footer p {
         text-align: center;
     }
 }
+
