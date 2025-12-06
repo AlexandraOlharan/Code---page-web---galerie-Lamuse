@@ -164,6 +164,75 @@ footer p {
     }
 }
 
+.news-letter {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.news-container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.news-bg {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+}
+
+.news-content h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.form-row {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    font-size: 11px;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 90%;        
+    padding: 3px;
+    font-size: 11px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+
+
+#email {
+    width: 95%;
+}
+
+
+button {
+    width: 30%;       
+    padding: 4px;
+    font-size: 11px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
 
 
 
