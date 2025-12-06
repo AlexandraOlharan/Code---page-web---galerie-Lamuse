@@ -231,6 +231,53 @@
 
         </div>
     </section>
+    <section class="news-letter">
+    <div class="news-container">
+        <img class="news-bg" src="tableau pam.png" alt="Newsletter Background">
+        <div class="news-content">
+            <h2>Abonnez-vous gratuitement à notre News Letter</h2>
+            <form id="newsletterForm" onsubmit="return validateForm()">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="prenom">Prénom :</label>
+                        <input type="text" id="prenom" name="prenom" placeholder="Prénom">
+                    </div>
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" placeholder="Nom">
+                    </div>
+                </div>
+
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Email">
+
+                <button type="submit">Soumettre</button>
+            </form>
+        </div>
+    </div>
+</section>
+<script>
+function validateForm() {
+    const prenom = document.getElementById('prenom').value.trim();
+    const nom = document.getElementById('nom').value.trim();
+    const email = document.getElementById('email').value.trim();
+
+    if(prenom === '' || nom === '' || email === '') {
+        alert('Veuillez remplir tous les champs.');
+        return false;
+    }
+
+    const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    if(!emailPattern.test(email)) {
+        alert('Veuillez entrer une adresse e-mail valide.');
+        return false;
+    }
+
+    alert('Merci pour votre inscription !');
+    return true;
+}
+</script>
+
 
 </body>
 </html>
