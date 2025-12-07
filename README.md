@@ -233,7 +233,7 @@
     </section>
     <section class="news-letter">
     <div class="news-container">
-        <img class="news-bg" src="tableau pam.png" alt="Newsletter Background">
+        <img class="news-bg" src="Images/tableau.png" alt="Newsletter Background">
         <div class="news-content">
             <h2>Abonnez-vous gratuitement à notre News Letter</h2>
             <form id="newsletterForm" onsubmit="return validateForm()">
