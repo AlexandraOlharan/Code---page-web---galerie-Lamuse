@@ -10,16 +10,19 @@ body {
     background-color: #f5f5f5;
 }
 
- .artistes {
-    max-width: 900px;
+.artistes {
+    max-width: 1300px;       
     margin: 0 auto;
     padding: 40px 20px;
     font-family: Arial, sans-serif;
 }
 
 .artistes h2 {
-    font-size: 28px;
+   font-size: 28px;
+    font-weight: 600;
     margin-bottom: 30px;
+    margin-top: -20px;    
+    margin-left: 10px;    
 }
 
 .grille {
@@ -28,27 +31,71 @@ body {
     gap: 30px;
 }
 
-.grille > div {
+
+.carte {
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.grille img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;   
+    transition: box-shadow 0.3s ease;
+    background: white;
     border-radius: 3px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    border: 1px solid transparent;
+    
 }
 
-.grille p {
-    margin: 5px 0 0;
+.carte:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+    border: 1px solid rgba(0, 0, 0, 0.18);
+}
+
+
+.carte img {
     width: 100%;
+    aspect-ratio: 1 / 1;   
+    object-fit: cover;
+    border-radius: 3px 3px 0 0;
+    transition: filter 0.5s ease; 
+    
+}
+
+.carte img:hover {
+    filter: grayscale(100%); 
+}
+
+.carte p {
+    margin: 0;
     background: #c4c4c4;
-    padding: 8px 0;
     text-align: center;
+    padding: 18px 0;
     font-weight: 500;
+    font-size: 15px;
     border-radius: 0 0 3px 3px;
+}
+
+@media (max-width: 900px) and (min-width: 601px) {
+    .grille {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 600px) {
+    .grille {
+        grid-template-columns: 1fr; 
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .carte {
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .artistes h2 {
+        text-align: center;
+        margin-left: 0;
+    }
 }
 
 
@@ -232,6 +279,7 @@ button {
     border-radius: 3px;
     cursor: pointer;
 }
+
 
 
 
