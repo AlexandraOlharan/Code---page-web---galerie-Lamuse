@@ -2,65 +2,61 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Galerie</title>
+    <title>Galerie Lamuse</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&display=swap" rel="stylesheet">
-
 </head>
-
-    <body>
-
-    <!-- ----------- Index ----------- -->
-    <nav>
-        <a href="#contacts">Contacts</a>
-        <a href="#informations">Informations</a>
-        <a href="#presentation">Présentation</a>
-        <a href="#artistes">Artistes</a>
-        <a href="#oeuvres">Oeuvres</a>
-    </nav>
-
-    <!-- ----------- Titre ----------- -->
-    <h1>Lamuse Galerie</h1>
-
-    <!-- ----------- Main Image ----------- -->
-    <div class="hero">
-        <img src="IMAGE1.png" alt="Galerie">
-    </div>
-
-    <!-- ----------- Presentation ----------- -->
-    <!-- Assurez que chacune de vos sections sont encadre par cette ligne en bas -->
-
-    <section id="presentation" class="presentation">
-        <h2>Présentation</h2>
-
-        <div class="presentation-content">
-
-            <img src="FONDATEUR.png" alt="Fondateur">
-            <!-- Remplacez FONDATEUR.jpg par l’image du fondateur -->
-
-            <p>
-                Gilles François a fondé la galerie Lamuse en 1975. Né dans une famille d’artistes, 
-                il a très tôt développé un goût pour la matière, la lumière et la forme. Après des 
-                études aux Beaux-Arts, et à l’occasion de nombreux voyages, il aiguise sa vision 
-                artistique et sa créativité. Il décide de créer un espace qui lui ressemble : un lieu 
-                de découverte, d’échanges et de rencontres où la créativité se vit au présent. Toujours 
-                en quête d’innovation, il collabore avec des artistes aux créations variées, mêlant 
-                photographie, peinture, et arts numérique. <br><br>
-                La galerie Laamuse célèbre aujourd’hui l’audace de la femme. Elle offre une scène 
-                vibrante aux artistes émergentes et confirmées, dans un mélange de créativité, 
-                d’émotions et de réflexions.
-            </p>
-
-        </div>
-    </section>
-
 <body>
 
-     <link rel="stylesheet" href="style.css">
+    
+   <header>
+    <nav>
+        <ul class="menu-left">
+            <li><a href="#contacts">Contacts</a></li>
+            <li><a href="#infos">Informations</a></li>
+        </ul>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul class="menu-right nav-links">
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#artistes">Artistes</a></li>
+            <li><a href="#oeuvres">Œuvres</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+
+
+    <h1>Galerie Lamuse</h1>
+    <img src="Images/galerie.jpg" alt="Galerie">    
+
     
 
-    <section class="artistes">
+    <section id="presentation">
+    <h2>Présentation</h2>
+    <div class="presentation-content">
+        <img src="Images/portrait.png" alt="portrait">
+        <p class="intro">
+Gilles François a fondé la galerie Lamuse en 1975. Né dans une famille d’artistes, il a très tôt développé un goût pour la matière, la lumière et la forme. Après des études aux Beaux-Arts et de nombreux voyages, il a aiguisé sa vision artistique et sa créativité. Il décide de créer un espace qui lui ressemble : un lieu de découverte, d’échanges et de rencontres où la créativité se vit au présent. Toujours en quête d’innovation, il collabore avec des artistes aux créations variées, mêlant photographie, peinture et arts numériques.  
+Très attentif aux détails, il a toujours cherché à comprendre les intentions et la technique des artistes avec lesquels il travaille. Ses choix reflètent une ouverture à différentes formes d’art et un goût prononcé pour les expérimentations. Chaque exposition est soigneusement pensée pour provoquer une émotion, stimuler la réflexion ou susciter la curiosité du visiteur.  
+Au fil des années, Gilles François a su créer un réseau solide d’artistes émergents et confirmés, permettant à la galerie Lamuse de devenir un espace de référence pour la découverte artistique à Nice et dans la région. Son engagement envers l’art contemporain et sa passion pour la mise en valeur de chaque création font de la galerie un lieu unique, mêlant tradition et modernité.  
+La galerie organise également des ateliers et des rencontres avec les artistes, offrant au public une expérience immersive et enrichissante. Ces initiatives contribuent à créer un dialogue vivant entre les œuvres et les visiteurs, renforçant la mission de la galerie : promouvoir la créativité sous toutes ses formes et célébrer l’audace artistique.
+    </p>
+
+    </div>
+    <p class="below-portrait">
+        La galerie Laamuse célèbre aujourd’hui l’audace de la femme. Elle offre 
+            une scène vibrante aux artistes émergentes et confirmées, dans un mélange 
+            de créativité, d’émotions et de réflexions.
+    </p>
+</section>
+
+<section id="artistes">
     <h2>Nos Artistes</h2>
 
     <div class="grille">
@@ -99,8 +95,8 @@
 
 </section>
 
-
-    <h2>Oeuvres</h2>
+<section id="oeuvres">
+<h2>Oeuvres</h2>
 
     <div class="gallery">
 
@@ -121,7 +117,10 @@
         </div>
 
     </div>
+   
+</section>
 
+    <section id="contacts">
     <footer>
         <div class="contact">
             <h3>Nous contacter</h3>
@@ -139,6 +138,7 @@
             </p>
         </div>
     </footer>
+    </section>
 
      <section class="news-letter">
     <div class="news-container">
@@ -165,12 +165,19 @@
         </div>
     </div>
 </section>
+
 <script>
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelectorAll('.nav-links');
 
-</body>
-</html>
+hamburger.addEventListener('click', () => {
+    navLinks.forEach(link => link.classList.toggle('active'));
+});
+</script>
 
 
+ 
+  
 
 
 
