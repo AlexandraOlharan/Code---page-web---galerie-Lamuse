@@ -9,27 +9,35 @@
 
     
    <header>
-    <nav>
-        <ul class="menu-left">
-            <li><a href="#contacts">Contacts</a></li>
-            <li><a href="#infos">Informations</a></li>
-        </ul>
+  <nav>
+    <ul class="menu-left desktop-only">
+        <li><a href="#contacts-infos">Contacts</a></li>
+        <li><a href="#contacts-infos">Informations</a></li>
+    </ul>
 
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+    <ul class="menu-right desktop-only">
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#artistes">Artistes</a></li>
+        <li><a href="#oeuvres">Œuvres</a></li>
+    </ul>
 
-        <ul class="menu-right nav-links">
-            <li><a href="#presentation">Présentation</a></li>
-            <li><a href="#artistes">Artistes</a></li>
-            <li><a href="#oeuvres">Œuvres</a></li>
-        </ul>
-    </nav>
+   
+    <div class="hamburger" aria-label="ouvrir le menu" role="button" tabindex="0" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    
+    <ul class="mobile-menu" aria-hidden="true">
+        <li><a href="#contacts-infos">Contacts</a></li>
+        <li><a href="#contacts-infos">Informations</a></li>
+        <li><a href="#presentation">Présentation</a></li>
+        <li><a href="#artistes">Artistes</a></li>
+        <li><a href="#oeuvres">Œuvres</a></li>
+    </ul>
+  </nav>
 </header>
-
-
 
 
     <h1>Galerie Lamuse</h1>
@@ -50,7 +58,7 @@ La galerie organise également des ateliers et des rencontres avec les artistes,
 
     </div>
     <p class="below-portrait">
-        La galerie Laamuse célèbre aujourd’hui l’audace de la femme. Elle offre 
+        La galerie Lamuse célèbre aujourd’hui l’audace de la femme. Elle offre 
             une scène vibrante aux artistes émergentes et confirmées, dans un mélange 
             de créativité, d’émotions et de réflexions.
     </p>
@@ -100,29 +108,29 @@ La galerie organise également des ateliers et des rencontres avec les artistes,
 
     <div class="gallery">
 
-        <div class="col">
-            <img src="images/temple.png" alt="Temple">
-            <img src="images/table.jpg" alt="Nature morte">
-            <img src="images/tapisserie.png" alt="Tapisserie">
-        </div>
+       <div class="col">
+    <img src="images/temple.png" alt="Temple" class="hover-change" data-hover="images/homme.png">
+    <img src="images/table.jpg" alt="Nature morte">
+    <img src="images/tapisserie.png" alt="Tapisserie">
+</div>
 
-        <div class="col">
-            <img src="images/danseuse.png" alt="Danseuse">
-            <img src="images/femme.jpg" alt="Femme">
-        </div>
+<div class="col">
+    <img src="images/danseuse.png" alt="Danseuse">
+    <img src="images/femme.jpg" alt="Femme" class="hover-change" data-hover="images/femme2.png">
+</div>
 
-        <div class="col">
-            <img src="images/arbre.png" alt="Arbre">
-            <img src="images/vague.png" alt="Vague">
-        </div>
+<div class="col">
+    <img src="images/arbre.png" alt="Arbre">
+    <img src="images/vague.png" alt="Vague" class="hover-change" data-hover="images/flou.png">
+</div>
 
-    </div>
-   
+
 </section>
 
-    <section id="contacts">
+    
+    <section id="contacts-infos">
     <footer>
-        <div class="contact">
+        <div class="infos">
             <h3>Nous contacter</h3>
             <p>
                 06 76 54 30 00<br>
@@ -136,48 +144,116 @@ La galerie organise également des ateliers et des rencontres avec les artistes,
                 51 rue des fleurs, Nice, 06000<br>
                 9h - 12h et 14h-17h
             </p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2884.6106001444423!2d7.248903276390274!3d43.69785827110001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12cdd013b36362e9%3A0x13477485801ca63e!2s51%20Av.%20des%20Fleurs%2C%2006000%20Nice!5e0!3m2!1sfr!2sfr!4v1765452994168!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </footer>
     </section>
 
-     <section class="news-letter">
+    <section class="news-letter">
     <div class="news-container">
         <img class="news-bg" src="Images/tableau.png" alt="Newsletter Background">
+
         <div class="news-content">
-            <h2>Abonnez-vous gratuitement à notre News Letter</h2>
-            <form id="newsletterForm" onsubmit="return validateForm()">
+            <h2>Abbonez-vous gratuitement à notre News Letter</h2>
+
+            <form id="newsletterForm">
                 <div class="form-row">
                     <div class="form-group">
                         <label for="prenom">Prénom :</label>
                         <input type="text" id="prenom" name="prenom" placeholder="Prénom">
                     </div>
+
                     <div class="form-group">
                         <label for="nom">Nom :</label>
                         <input type="text" id="nom" name="nom" placeholder="Nom">
                     </div>
                 </div>
 
-                <label for="email">Email :</label>
-                <input type="email" id="email" name="email" placeholder="Email">
+                <div class="form-group email-group">
+                    <label for="email">Adresse e-mail :</label>
+                    <input type="email" id="email" name="email" placeholder="Adresse e-mail">
+                </div>
 
-                <button type="submit">Soumettre</button>
+                <button class="submit-btn" type="submit">Soumettre</button>
             </form>
         </div>
     </div>
 </section>
 
+
+
+
 <script>
 const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelectorAll('.nav-links');
+const mobileMenu = document.querySelector('.mobile-menu');
 
-hamburger.addEventListener('click', () => {
-    navLinks.forEach(link => link.classList.toggle('active'));
+function toggleMobileMenu() {
+  const isActive = mobileMenu.classList.toggle('active');
+  hamburger.setAttribute('aria-expanded', String(isActive));
+  mobileMenu.setAttribute('aria-hidden', String(!isActive));
+}
+
+
+hamburger.addEventListener('click', toggleMobileMenu);
+
+
+hamburger.addEventListener('keydown', (e) => {
+  if (e.key === 'Enter' || e.key === ' ') {
+    e.preventDefault();
+    toggleMobileMenu();
+  }
+});
+
+
+mobileMenu.querySelectorAll('a').forEach(a => {
+  a.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+  });
+});
+
+
+document.addEventListener('click', (e) => {
+  if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
+    mobileMenu.classList.remove('active');
+    hamburger.setAttribute('aria-expanded', 'false');
+    mobileMenu.setAttribute('aria-hidden', 'true');
+  }
 });
 </script>
 
+<script>
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+});
 
- 
+
+</script>
+
+<script>
+document.querySelectorAll('.hover-change').forEach(img => {
+    const originalSrc = img.src;
+    const hoverSrc = img.dataset.hover;
+
+    img.addEventListener('mouseenter', () => {
+        img.src = hoverSrc;
+    });
+
+    img.addEventListener('mouseleave', () => {
+        img.src = originalSrc;
+    });
+});
+</script>
   
+
 
 
 
